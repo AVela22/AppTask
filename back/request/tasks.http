@@ -1,0 +1,32 @@
+@api = http://localhost:3000/tasks
+
+//SEPARAR CADA ACCION REQUEST CON  3 NUMERALES ###
+GET {{api}}
+
+###
+GET {{api}}/3
+
+###
+GET {{api}}/count
+
+###
+POST {{api}}
+Content-Type: application/json
+
+{
+    "title":"title 6",
+    "description":"desc 6"
+}
+
+###
+DELETE {{api}}/2
+
+
+###
+PUT {{api}}/8
+Content-Type: application/json
+
+{
+    "title":"Modificiar web",
+    "description":"desc2  Changed"
+}
